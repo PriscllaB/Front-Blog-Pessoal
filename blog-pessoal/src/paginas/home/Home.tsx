@@ -1,5 +1,5 @@
 
-import homeLogo from '../../assets/casa.webp'
+import homeLogo from '../../assets/img/leon38.png'
 import './Home.css';
 
 
@@ -19,7 +19,7 @@ function Home() {
             </div>
   
             <div className="flex justify-center ">
-              <img src={homeLogo} alt="" className='w-2/3' />
+              <img src={homeLogo} alt="" className='w-1/2' />
       
             </div>
           </div>
