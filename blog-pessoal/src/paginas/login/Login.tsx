@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import './Login.css';
 
 import { Link, useNavigate } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
+import loginLogo from '../../assets/img/fff.jpg'
 
 function Login() {
   let navigate = useNavigate();
@@ -43,6 +44,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
           <h2 className="text-slate-900 text-5xl ">Entrar</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="usuario">Usuário</label>
+            
             <input
               type="text"
               id="usuario"
@@ -82,9 +84,13 @@ function login(e: ChangeEvent<HTMLFormElement>) {
             Ainda não tem uma conta?{' '}
             <Link to="/cadastro" className="text-indigo-800 hover:underline">
               Cadastre-se
-            </Link>
+            </Link>            
           </p>
+          
         </form>
+        
+        {/* <img className='w-full h-72 object-cover border-b-8 border-white' src={loginLogo} alt="Capa do Perfil" /> */}
+
         <div className="fundoLogin hidden lg:block"></div>
       </div>
     </>
