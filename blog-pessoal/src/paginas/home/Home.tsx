@@ -1,4 +1,5 @@
 
+
 import homeLogo from '../../assets/img/leon38.png'
 import './Home.css';
 import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
